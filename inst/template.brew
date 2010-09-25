@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <title>Image Survey Results</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript" src="jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.js"></script>
+    <script type="text/javascript">
+$(document).ready(function()
+  {
+    $("#myTable").tablesorter();
+  }
+);
+    </script>
+  </head>
+  <body>
+    <table id="myTable" class="tablesorter" border="0" cellspacing="1" cellpadding="0">
+      <thead>
+        <tr>
+          <% for (name in names(df)) { -%>
+            <%= paste('<th>', name ,'</th>', sep = '') %>
+          <% } -%>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (i in 1:nrow(df)) { -%>
+        <tr>
+          <% for (j in 1:ncol(df)) { -%>
+            <td><%= df[i, j] %></td>
+          <% } -%>
+        </tr>
+        <% } -%>
+      </tbody>
+    </table>
+  </body>
+</html>
