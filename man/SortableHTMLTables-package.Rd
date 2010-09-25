@@ -6,7 +6,7 @@
 Turns a data frame into an HTML file containing a sortable table.
 }
 \description{
-SortableHTMLTables writes a data frame to an HTML file that contains a sortable table. The sorting is using the jQuery plugin Tablesorter. The appearance is controlled through an existing CSS file and several GIF's.
+SortableHTMLTables writes a data frame to an HTML file that contains a sortable table. The sorting is done using the jQuery plugin Tablesorter. The appearance is controlled through a CSS file and several GIF's.
 }
 \details{
 \tabular{ll}{
