@@ -1,8 +1,8 @@
 Package: SortableHTMLTables
 Type: Package
 Title: Turns a data frame into an HTML file containing a sortable table.
-Version: 0.1-1
-Date: 2010-09-25
+Version: 0.1-2
+Date: 2010-09-26
 Author: John Myles White
 Maintainer: John Myles White <jmw@johnmyleswhite.com>
 Description: SortableHTMLTables writes a data frame to an HTML file that contains a sortable table. The sorting is done using the jQuery plugin Tablesorter. The appearance is controlled through a CSS file and several GIF's.

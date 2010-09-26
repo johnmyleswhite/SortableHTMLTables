@@ -1,4 +1,7 @@
-sortable.html.table <- function(df, output.file = 'output.html', output.directory = getwd())
+sortable.html.table <- function(df,
+                                output.file = 'output.html',
+                                output.directory = getwd(),
+                                page.title = 'Untitled Page')
 {
   # Create output.directory if it does not exist already.
   if (! file.exists(output.directory))

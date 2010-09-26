@@ -7,7 +7,7 @@ Write a data frame as an HTML file containing a sortable table.
 sortable.html.table writes a data frame out as an HTML file that is sortable using Javascript. The appearance of the table is controlled through CSS and uses several GIF icons.
 }
 \usage{
-sortable.html.table(df, output.file, output.directory)
+sortable.html.table(df, output.file, output.directory, page.title)
 }
 \arguments{
   \item{df}{
@@ -18,6 +18,9 @@ sortable.html.table(df, output.file, output.directory)
 }
 	\item{output.directory}{
 	The directory in which the HTML document and assets will be stored.
+}
+	\item{page.title}{
+	The title attribute for the HTML document produced. Defaults to 'Untitled Page'.
 }
 }
 \value{

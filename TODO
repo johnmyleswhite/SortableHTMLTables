@@ -1,3 +1,9 @@
-(1) Confirm that arbitrary data types are rendered properly.
+(1) Confirm that arbitrary data types are rendered properly. Switched to as.character to solve factor() bug.
 
-(2) Allow user to specify the title of HTML page.
+(2) Include/exclude row names. Still possible with sorting? May need to simply make that row invisible.
+
+(3) Allow replacement of newlines in text field with <br />
+
+(4) Allow auto-linking.
+
+(5) Table expansion rules?

@@ -1,3 +1,5 @@
+# Test basic functionality.
+
 library('SortableHTMLTables')
 library('testthat')
 

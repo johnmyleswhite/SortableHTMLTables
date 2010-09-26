@@ -1,6 +1,6 @@
 <html lang="en">
   <head>
-    <title>SortableHTMLTables</title>
+    <title><%= page.title %></title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <script type="text/javascript" src="jquery-1.4.2.js"></script>
     <script type="text/javascript" src="jquery.tablesorter.js"></script>
@@ -25,7 +25,7 @@ $(document).ready(function()
         <% for (i in 1:nrow(df)) { -%>
         <tr>
           <% for (j in 1:ncol(df)) { -%>
-            <td><%= df[i, j] %></td>
+            <td><%= as.character(df[i, j]) %></td>
           <% } -%>
         </tr>
         <% } -%>
